@@ -1,0 +1,47 @@
+
+% Random variables
+\usepackage{bm} % for bold matrices
+\newcommand{\rv}[1]{\MakeUppercase{#1}} % random variable: capital
+\newcommand{\rve}[1]{\bm{\MakeUppercase{#1}}} % random vector: capital bold
+
+% Matrices and vectors
+\newcommand{\ve}[1]{\bm{#1}} % vector: lowercase bold
+\newcommand{\vet}[1]{\mathbf{#1}} % vector text: lowercase non-italic bold
+\newcommand{\m}[1]{\bm{\MakeUppercase{#1}}} % matrix: capital bold
+
+% Matrices and vectors operators or functions
+\newcommand{\abs}[1]{\left| #1 \right|} % \bigm \vert
+\newcommand{\tr}{\intercal}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\normsq}[1]{\left\lVert#1\right\rVert^2}
+
+% Math functions
+\newcommand{\ind}[1]{\mathds{1}_{\left(#1\right)}} % \bigm \vert
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Statistics and Probability
+\usepackage{xifthen}
+\newcommand{\mean}[2][]{\mathds{E}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]}
+\newcommand{\var}[2][]{\mathds{V}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]}
+\newcommand{\cov}[3][]{\text{Cov}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2,#3\right]}
+\newcommand{\cor}[3][]{\text{Cor}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2,#3\right]}
+\newcommand{\pr}[1]{\text{Pr}\left(#1\right)} % \bigm \vert
+\newcommand{\meanhat}[1]{\hat{\mathds{E}}\left[#1\right]}
+% \newcommand{\cond}{\mid} % \bigm \vert
+
+% Density Functions
+\newcommand{\df}[1]{\mathcal{#1}} % density function
+% \newcommand{\ind}[1]{I{\left(#1\right)}} % \bigm \vert
+
+% Link functions
+\newcommand{\logit}[1]{\text{logit}\left(#1\right)} % \bigm \vert
+
+% Text decorations
+\newcommand{\key}[1]{\textbf{#1}}
+\newcommand{\page}[1]{page #1}
+\newcommand{\mypar}[1]{\noindent \textbf{#1}}
+\newcommand{\degrees}{^{\circ}}
+
+
+
+

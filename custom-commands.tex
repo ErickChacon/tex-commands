@@ -2,6 +2,10 @@
 % Random variables
 \usepackage{bm} % for bold matrices
 \usepackage{dsfont} % for bold matrices
+
+\newcommand{\edit}[1]{\textbf{\MakeUppercase{#1}}}
+\newcommand{\reply}[1]{\textcolor{red}{#1}}
+
 \newcommand{\rv}[1]{\MakeUppercase{#1}} % random variable: capital
 \newcommand{\rve}[1]{\bm{\MakeUppercase{#1}}} % random vector: capital bold
 \newcommand{\gp}{w} % random variable: capital
@@ -35,11 +39,12 @@
 % Statistics and Probability
 \usepackage{xifthen}
 \newcommand{\mean}[2][]{\mathds{E}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]}
+\newcommand{\meanhat}[2][]{\hat{\mathds{E}}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]}
 \newcommand{\var}[2][]{\mathds{V}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]}
 \newcommand{\cov}[3][]{\text{Cov}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2,#3\right]}
 \newcommand{\cor}[3][]{\text{Cor}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2,#3\right]}
 \newcommand{\pr}[1]{\text{Pr}\left(#1\right)} % \bigm \vert
-\newcommand{\meanhat}[1]{\hat{\mathds{E}}\left[#1\right]}
+% \newcommand{\meanhat}[1]{\hat{\mathds{E}}\left[#1\right]}
 % \newcommand{\cond}{\mid} % \bigm \vert
 
 % Density Functions
@@ -58,7 +63,4 @@
 \newcommand{\se}{\text{Section }} % random variable: capital
 \newcommand{\fig}{\text{Figure }} % random variable: capital
 \newcommand{\tab}{\text{Table }} % random variable: capital
-
-
-
-
+\newcommand{\app}{\text{Appendix }} % random variable: capital

@@ -4,7 +4,15 @@
 \usepackage{dsfont} % for bold matrices
 
 \newcommand{\edit}[1]{\textbf{\MakeUppercase{#1}}}
-\newcommand{\reply}[1]{\textcolor{red}{#1}}
+\newcommand{\reply}[1]{\textcolor{blue}{#1}}
+\newcommand{\note}[1]{
+  \fcolorbox{red}{white}{
+  \begin{minipage}{0.9\textwidth}
+    \textcolor{red}{\bf{Note:}} #1
+  \end{minipage}
+}}
+
+
 
 \newcommand{\rv}[1]{\MakeUppercase{#1}} % random variable: capital
 \newcommand{\rve}[1]{\bm{\MakeUppercase{#1}}} % random vector: capital bold

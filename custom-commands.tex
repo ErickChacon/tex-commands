@@ -34,8 +34,9 @@
 \newcommand{\normsq}[1]{\left\lVert#1\right\rVert^2}
 \newcommand{\diag}[1]{\text{diag}(#1)}
 \newcommand{\trace}[1]{\text{tr}\left(#1\right)}
-\newcommand{\cross}[2][]{#2^\tr\ifthenelse{\isempty{#1}}{#2}{{#1}}}
-\newcommand{\tcross}[1]{#1#1^\tr}
+\newcommand{\rank}[1]{\text{rank}(#1)}
+\newcommand{\cross}[2][]{#2^\tr\ifthenelse{\isempty{#1}}{}{#1} #2}
+\newcommand{\tcross}[2][]{#2\ifthenelse{\isempty{#1}}{}{#1} #2^\tr}
 \newcommand{\mve}[1]{\text{vec}({#1})} % matrix: capital bold
 
 % Math functions
